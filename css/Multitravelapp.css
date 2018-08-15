@@ -40,8 +40,7 @@ border-bottom: 2px solid #FF9900
 }
 main{
     top: 30px;
-    position: relative;
-    margin-bottom: 20px;
+
 
 }
 .contenedor{
@@ -72,12 +71,10 @@ main{
 }
 .div-btn{
     
-    height: 15vh;
+    height: 18vh;
     overflow: hidden;
-    
-    background-position: center;
-    width: 42%;
-    float: center;
+    width: 48%;
+    float: right;
     text-align: center;
 }
 .text-p2{  
@@ -114,8 +111,8 @@ float: center;
 #sinCos{
 font-family: 'Roboto',sans-serif;
 font-weight: bold;
-font-size: 20px;
-height: 100px; 
+font-size: 18px;
+height: 50px; 
 color: #064e7d;
 margin-top: -5px;
 }
@@ -173,7 +170,8 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Roboto',sans-serif;
-    padding: 10px
+    padding: 10px;
+    margin-top: 5%;
 }
 .btn-elegir{
     background: #FF9900;
@@ -198,10 +196,14 @@ footer{
     .text-p{ 
         font-size: 17px; 
         width: 100%;
+        height: 20vh;
+        margin-top: 20px;
     } 
     .text-p2{
         width: 100%;
         font-size: 18px;
+        height: 20vh;
+        margin-top: 20px;
     }
     .div-btn{
         width: 100%;
@@ -210,7 +212,9 @@ footer{
         width: 100%;
     }
 }
-
+.input-text {
+    height: 100px;
+}
 @media (min-width: 851px)and (max-width: 1024px){
     .btn-xs{
         width: 50%;
@@ -221,10 +225,12 @@ footer{
     }
     .text-p{
         text-align: right;
+        height: 20vh;
     }
     .text-p2{
         margin-top: 10px;
         margin-left: -30px;
+        height: 20vh;
     }
     .titleMain{
         width: 50%;
