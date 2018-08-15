@@ -1,3 +1,12 @@
+body{
+  background: #FFF;
+  width: 100%;
+  max-width:1000px;
+  position: relative;
+  font-family: 'Roboto';
+  margin: auto;
+  text-align: center;
+}
 h1, h2, h4{
   font-family:'Roboto', sans-serif;
   color: #064e7d;
@@ -5,7 +14,7 @@ h1, h2, h4{
 }
 .warning{
   font-family: 'Roboto',sans-serif;
-  color: black;
+  color: red;
   align-content: center;
   font-size: 0.6em;
 }
@@ -29,7 +38,7 @@ p{
 }
 .title{
   text-align: center;
-  background: white;
+  background: #FFF;
 }
 @media screen and (max-width: 500px) {
   .col-25, .col-75, input[type=submit] {
@@ -37,50 +46,23 @@ p{
     margin-top: 0;
   }
 }
-.contenedorGlobal{
-  width: 100%;
-  max-width: 500px;
-  background: white;
-  position: relative;
-  margin: auto; /*Ubica el contenedor en el centro de la página*/
-  display: block;
-}
-.contenedorFrom {
-  border-radius: 5px;
-  background-color: white;
-  text-align: center;
-  justify-content: space-between;
-  border: 2px solid white;
-  max-width: 95%;
-}
-/*
 .contenedorHeader{
-  background: white;
-  border-radius: 5px;
+  font-family: 'Roboto',sans-serif;
+  background: #FFF;
   align-content: center;
   justify-content: space-between;
   display: flex;
-  border: 2px solid white;
-  border-bottom-color: #FF9900;
-  width: 100%;
-}
-*/
-.contenedorHeader{
-  background: white;
-  border-radius: 5px;
-  align-content: center;
-  justify-content: space-between;
-  display: flex;
-  border: 2px solid white;
+  border: 2px solid #FFF;
   border-bottom-color: #FF9900;
   height: 50px;
   width: 100%;
+  max-width: 997px;
   position: fixed;
-  left: 0;
+  z-index:2;
   top: 0;
 }
 .items{
-  background: white;
+  background: #FFF;
   display: flex;
   justify-content:space-between;
   height: 40px;
@@ -89,15 +71,25 @@ p{
   font-size: 0.8em;
   font-family: sans-serif;
   font-weight: bold;
+
 }
 .contenedorMain{
-  padding-top: 50px;
-  margin-bottom: 60px;
+    font-family: 'Roboto',sans-serif;
+    background: #FFF;
+    align-content: center;
+    justify-content: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width:1000px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+    margin: auto;
 }
 .label_main{
   font-family:'Roboto', sans-serif;
   text-align: center;
-  background:white;
+  background:#FFF;
   padding: 10px;
   color: #064e7d;
   font-weight: 600;
@@ -115,7 +107,7 @@ p{
   display: block;
 }
 .btn-xs-activo{
-  background:white;
+  background:#FFF;
   padding: 10px;
   color: #064e7d;
   font-weight: 600;
@@ -125,10 +117,11 @@ p{
   border: none;
 }
 .btn-xs-activo:focus {
-  outline: 1px solid #064e7d;
+ /* outline: 1px solid #064e7d;*/
+ color: black;
 }
 .btn-xs-inactivo{
-  background: #ffffff;
+  background: #FFF;
   padding: 10px;
   color: grey;
   font-weight: 600;
@@ -138,9 +131,10 @@ p{
   border: none;
 }
 .btn-xs-inactivo:focus {
-  outline: 1px solid rgba(0, 0, 0, 0.7);
+  /*outline: 1px solid rgba(0, 0, 0, 0.7);*/
+  color: black;
 }.btn-xs-body{
-  background: #ffffff;
+  background: #FFF;
   color: grey;
   align-content: center;
   display: block;
@@ -148,17 +142,18 @@ p{
   border: none;
 }
 .btn-xs-body:focus {
-  outline: 1px solid rgba(0, 0, 0, 0.7);
+ /* outline: 1px solid rgba(0, 0, 0, 0.7);*/
+ color: black;
 }
 .spamBtn{
   justify-content: space-between;
   display: flex;
-  border: 2px solid white;
+  border: 2px solid #FFF;
   border-bottom-color: #064e7d;
 }
 #imagHeader{
   margin-top: 20px;
-  background: white
+  background: #FFF
 }
 .btn-xs-footer{
   background: #064e7d;
@@ -172,115 +167,351 @@ p{
   border: none;
 }
 .btn-xs-footer:hover{
-  color: white;
+  color: #FFF;
   background-color: #09598d;
   border: 2px solid #09598d;
   border-top-color: #FF9900;
 }
-/*.contenedorFooter{
-  background: white;
-  border-radius: 5px;
-  align-content: center;
-  justify-content: space-between;
-  display: flex;
-  border: 2px solid white;
-  border-top-color: #FF9900;
-  width: 100%;
-}*/
 .contenedorFooter{
-  background: white;
-  border-radius: 5px;
+  background: #FFF;
   align-content: center;
   justify-content: space-between;
   display: flex;
-  border: 2px solid white;
   height: 50px;
   width: 100%;
   margin-top: 40px;
+  max-width: 997px;
   position: fixed;
-  left: 0;
   bottom: 0;
-  border: 2px solid white;
+  border: 2px solid #064e7d;
   border-top-color: #FF9900;
+  z-index:2;
 }
 .textoPrueba{
   text-align: justify;
 }
-/*
-* CSS FORM
-*/
-.contenedorFrom {
-  padding-top: 20px;
-  max-width: 400px;
-  width: 95%;
+.contenedorForm {
+  padding-top: 30px;
   margin: auto;
+  padding-bottom: 60px;
+  max-width: 450px;
+  width: 80%;
+  position: relative;
+  z-index:1;
 }
-.formulario_input, .formulario_label, .formulario_inputConf {
-  display: block;
-  width: 95%;
-  font-size: 1em;
-}
-.formulario_input, .formulario_label, .formulario_inputConf{
-  text-align: center;
-}
-.formulario_label {
+#icon-eye {
   position: absolute;
-  font-family: sans-serif;
+  right: -3px;
+  top: 0px;
+  padding: 9px 8px;
+  color: #064e7d;
+  float: right;
+}
+itemMenu{
+  font-family: 'Roboto',sans-serif;
+  font-size: 0.9em;
+ /* align-content: space-around;*/
+  justify-content: space-between;
   font-weight: bold;
-  margin-top: -85px;
-  *z-index: -20;
-  color: rgba(0, 0, 0, 0.5);
-  transition: all 0.1s;
-  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
-  max-width: 400px;
-  width: 95%;
+  color: gray;
+  display: flex;
+  height: 30px;
+  width: 90%;
+  margin-left: 30px;
+  max-width: 450px;
+  padding-top: 10px;
+  z-index:2;
 }
-.formulario_input {
-  padding: 5px;
-  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
-  margin-bottom: 40px;
- /* background: rgba(0, 0, 0, 0.1);*/
-  background: transparent;
-  border: 1.95px solid white;
-  border-bottom-color: black;
-  max-width: 400px;
-  width: 95%;
-  background-image:(images/eye-solid.svg);
-}
-.formulario_inputConf{
-  margin-top: -25px;
-  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
-  margin-bottom: 40px;
- /* background: rgba(0, 0, 0, 0.1);*/
-  background: transparent;
-  border: 1.95px solid white;
-  border-bottom-color: black;
-  max-width: 400px;
-  width: 95%;
-}
-.formulario_input:focus {
-  /*outline: 1px solid rgba(0, 0, 0, 0.);*/
-  outline-color: transparent;
-  border-bottom-color: #006194;
-}
-.formulario_input:focus::-webkit-input-placeholder{
+.btn-xs-sesion{
+  background:#FFF;
+  padding: 10px;
   color: red;
+  font-weight: 600;
+  align-content: center;
+  display: block;
+  width: 100%;
+  border: none;
+}
+.btn-xs-sesion:focus {
+  /*outline: 1px solid #064e7d;*/
+  color: #064e7d;
+}
+.contenedorFooter2{
+  background: #FFF;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 50px;
+  width: 100%;
+  margin-top: 40px;
+  max-width: 997px;
+  position: fixed;
+  bottom: 0;
+  border: 2px solid #FFF;
+  border-top-color: #FF9900;
+  z-index:2;
 }
 
-.formulario_input[placeholder]:focus, .formulario_inputConf[placeholder]:focus{
-  color:grey;
-  font-size: 0.8em;
+#iconFooter{
+  font-weight: bold;
+  margin-left: 35px;
+  margin-right: 35px;
+  max-width: 450px;
+  padding-top: 10px;
 }
-.formulario_input[placeholder], .formulario_inputConf[placeholder]{
-  color:black;
-  font-size: 0.8em;
+
+.labelFooter{
+  font-family: 'Roboto',sans-serif;
+  font-size: 0.6em;
+  font-weight: bold;
+  max-width: 450px;
+  padding-right: 20px;
+  padding-left: 22px
 }
-.formulario_input:focus + .formulario_label{
-  margin-top: -95px;
+optionFooter2{
+  padding-right: 22px;
 }
-.fijar {
-  margin-top: -95px;
+.select {
+  font-family: 'Roboto',sans-serif;
+  position: relative;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  margin: 10px auto 10px;
+  overflow: hidden;
+  background-color: #e3e4e5;
 }
+  .select:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    pointer-events: none;
+  }
+  .select select {
+    width: 99%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+  }
 /*
-* CSS MODAL
+=====
+LEVEL 1. RESET STYLES
+=====
 */
+
+.field{
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+}
+
+.field__input{
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: inherit;
+  font-size: 0.8em;
+}
+
+.a-field .field__input:focus{
+  outline: none;
+}
+
+.field__input:focus::-webkit-input-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+}
+
+.field__input:focus::-moz-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+  opacity: 1;
+}
+
+/*
+=====
+LEVEL 2. CORE STYLES
+=====
+*/
+
+.field{
+  display: inherit;
+}
+
+.field__input{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*
+=====
+LEVEL 3. PRESENTATION STYLES
+=====
+*/
+
+/* a-field */
+
+.a-field{
+  --uiFieldHeight: var(--fieldHeight, 25px);
+  --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+  --uiFieldBorderColor: var(--fieldBorderColor);
+
+  --uiFieldFontSize: var(--fieldFontSize, .9em);
+  --uiFieldHintFontSize: var(--fieldHintFontSize, .9em);
+
+  font-family: sans-serif;
+  font-weight: bold;
+  color: gray;
+
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
+  --uiFieldPaddingBottom: var(--fieldPaddingBottom, 15px);
+
+  position: relative;
+  box-sizing: border-box;
+  /*font-size: var(--uiFieldFontSize);*/
+  padding-top: 1em;
+}
+
+.a-field .field__input{
+  height: var(--uiFieldHeight);
+  padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);
+}
+
+.a-field .field__input::-webkit-input-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .field__input::-moz-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .field__input:not(:placeholder-shown) ~ .field__label-wrap .field__label{
+  opacity: 0;
+  bottom: var(--uiFieldPaddingBottom);
+}
+
+.a-field .field__input:focus::-webkit-input-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .field__input:focus::-moz-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .field__label-wrap{
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--uiFieldHeight);	
+  text-align: center;
+
+  pointer-events: none;
+  cursor: text;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.a-field .field__label{
+  position: relative;
+  bottom: calc(50% - 1em);
+
+  line-height: 1;
+  font-size: var(--uiFieldHintFontSize);
+
+  pointer-events: none;
+  transition: bottom .2s cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity .2s ease-out;
+  will-change: bottom, opacity;
+}
+
+.a-field .field__input:focus ~ .field__label-wrap .field__label{
+  opacity: 1;
+  bottom: var(--uiFieldHeight);
+}
+
+/* a-field_a1 */
+
+.a-field_a1 .field__input{
+  transition: border-color .2s ease-out;
+  will-change: border-color;
+}
+
+.a-field_a1 .field__input:focus{
+  border-color: var(--fieldBorderColorActive);
+}
+
+/* a-field_a2 */
+
+.a-field_a2 .field__label-wrap:after{
+  content: "";
+  box-sizing: border-box;
+  width: 0;
+  height: var(--uiFieldBorderWidth);
+  background-color: var(--fieldBorderColorActive);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+
+  will-change: width;
+  transition: width .285s ease-out;
+}
+
+.a-field_a2 .field__input:focus ~ .field__label-wrap:after{
+  width: 100%;
+}
+
+/* a-field_a3 */
+
+.a-field_a3{
+  padding-top: 1.5em;
+}
+
+.a-field_a3 .field__label-wrap:after{
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+
+  opacity: 0;
+  border: var(--uiFieldBorderWidth) solid var(--fieldBorderColorActive);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  will-change: opacity, height;
+  transition: height .2s ease-out, opacity .2s ease-out;
+}
+
+.a-field_a3 .field__input:focus ~ .field__label-wrap:after{
+  height: 100%;
+  opacity: 1;
+}
+
+.a-field_a3 .field__input:focus ~ .field__label-wrap .field__label{
+  bottom: calc(var(--uiFieldHeight) + .5em);
+}
+
+/*
+=====
+LEVEL 4. SETTINGS
+=====
+*/
+
+.field{
+  --fieldBorderColor: #e3e4e5;
+  --fieldBorderColorActive: #09598d;
+}
+
